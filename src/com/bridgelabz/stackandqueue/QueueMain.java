@@ -12,6 +12,12 @@ public static void main(String[] args) {
 		QueueList.enqueue(thirdNode);
 		System.out.println("Queue: ");
 		QueueList.printQueue();
+		System.out.println("Size of the Queue is: "+QueueList.size());
+		System.out.println("Queue after repeated dequeue : ");
+		while(!QueueList.isEmpty()) {
+			QueueList.dequeue();
+			QueueList.printQueue();
+		}
 
 	}
 }
